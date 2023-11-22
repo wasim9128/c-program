@@ -1,20 +1,20 @@
 #include <stdio.h>
 #include <conio.h>
 
-int ADD(int a, int b);
-int SUB(int a, int b);
-int MULT(int a, int b);
-int DIV(int a, int b);
+float ADD(float a, float b);
+float SUB(float a, float b);
+float MULT(float a, float b);
+float DIV(float a, float b);
 
 int main()
 {
-    int num1, num2, result;
+    float num1, num2, result;
     char choice; // Changed to a single character variable
 
     printf("Enter Two Numbers To Perform an Operation: \n");
     scanf("%d %d", &num1, &num2);
 
-    printf("Enter the operation you want to perform (+ for addition, - for subtraction): ");
+    printf("Enter the operation you want to perform (+ for addition, - for subtraction, * for Multiplication, / for Div): ");
     scanf(" %c", &choice); // Note the space before %c to consume any newline character.
 
     if (choice == '+')
@@ -54,24 +54,24 @@ int main()
 }
 
 // Definition of ADD() function
-int ADD(int a, int b)
+float ADD(float a, float b)
 {
     return a + b;
 }
 
 // Definition of SUB() function
-int SUB(int a, int b)
+float SUB(float a, float b)
 {
     return a - b;
 }
 // Definition of MULT() function
-int MULT(int a, int b)
+float MULT(float a, float b)
 {
     return a * b;
 }
 
 // Definition of DIV() function
-int DIV(int a, int b)
+float DIV(float a, float b)
 {
     return a / b;
 }
